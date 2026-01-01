@@ -1,0 +1,44 @@
+#mainTopic {
+  color: blue;
+}
+
+*{
+    text-align: center;
+}
+
+h1{
+    font-style: georgia;
+}
+
+h3{
+    font-style: georgia;
+}
+
+#para{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+button{
+    color: azure;
+    background: purple;
+}
+#para1{
+    color: white;
+    background: yellow;
+}
+
+h1::first-letter {
+color: red;
+}
+
+#yes:checked + label {
+color: darkgreen;
+}
+
+button:hover {
+background-color: yellow;
+color: blue;
+}
+
+

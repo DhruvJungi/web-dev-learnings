@@ -1,0 +1,45 @@
+/* h1{
+    color: aqua;
+}
+p{
+    color: crimson;
+}
+button{
+    color: brown;
+    background: black;
+} */
+
+/* practice question */
+
+h2{
+    color: red;
+    text-align: center;
+    text-decoration: wavy black underline;
+    font-size: 25px;
+    /* font-family: sans-serif; */
+}
+p{
+    /* background: #000;
+    color: white; */
+    font-weight: normal;
+    line-height: 2.5;
+    letter-spacing: 2px;
+}
+
+button{
+    background: blue;
+    color: white;
+}
+
+/* PRACTICE QUES 2 */
+
+h1{
+    font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: teal double underline;
+    text-transform: uppercase;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+        <label for="username"> User Id:</label>
+        <input type="text" id="username" placeholder="enter user id">
+        
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="enter password">
+        <br>
+        <!-- <input type="button"  value="click me"> we donot use button in input tag. -->
+        <label for="age">age under 20</label>
+        <input type="radio" id="age" name="age">
+        <label for="age">age over 18</label>
+        <input type="radio" id="age1" name="age">
+        <label for="conformation">details are correct</label>
+        <input type="checkbox" id="'conformation" name="conformation">
+        <br>
+        <label for="profession">Profession</label>
+        <select name="profession" id="professsion">
+            <option value="student">student</option>
+            <option value="it developer">It developer</option>
+        </select>
+        <br>
+        <label for="vol">select your Volume</label>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10">
+        <br>
+        <button type="submit">submit</button>
+        <br>
+        <label for="suggestion">Suggestions</label>
+        <textarea name="suggestion" id="suggestion"></textarea>
+        <br>
+        <button type="reset">reset</button>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results?">
+        <label for="search_query">search on youtube:</label>
+        <input type="text" placeholder="enter the content name" name="search_query">
+        <button>search</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search?">
+        <label for="q">search on google:</label>
+        <input type="text" placeholder="enter the word to search" name="q">
+        <button>search</button>
+
+    </form>
+    <hr>
+    <!-- practice question to create a form  -->
+     <form action="registration form">
+        <h1>Registration Form</h1>
+        <label for="firstname">first Name : </label>
+        <input type="text" id="firstname" name="firstname" placeholder="enter your first name">
+        <br>
+        <label for="lastname">last Name : </label>
+        <input type="text" id="lastname" name="lastname" placeholder="enter your last name ">
+        <br>
+        <label for="gender">Select your gender : </label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <div>
+        Do you agree to all terms of service?
+        <input type="checkbox" value="Yes,I agree" name="terms">
+        <label for="terms">Yes, I agree</label>
+        </div>
+        <br>
+        <button>Register</button>
+     </form>
+     <hr>
+     <form action="">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="enter your name" name="name" id="name">
+        <br>
+        <label for="sex">Sex:</label>
+        <label for="sex">Male</label>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="sex">Female</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="uae">UAE</option>
+            <option value="usa">USA</option>
+        </select>
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <input type="checkbox" name="sub" id="sub">
+        <label for="sub">Subscribe</label>
+        <br>
+        <button>Submit</button>
+     </form>
+     <hr>
+     <form action="">
+        <h1>Feedback Form</h1>
+        <br>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="write your name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="write your email">
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <label for="rate">Rate us out of 5:</label>
+        <br>
+        <input type="radio" id="one" name="rate" value="one">
+        <label for="one">1</label>
+        <br>
+        <input type="radio" id="two" name="rate" value="two">
+        <label for="two">2</label>
+        <br>
+        <input type="radio" id="three" name="rate" value="three">
+        <label for="three">3</label>
+        <br>
+        <input type="radio" id="four" name="rate" value="four">
+        <label for="four">4</label>
+        <br>
+        <input type="radio" id="five" name="rate" value="five">
+        <label for="five">5</label>
+        <br>
+        <button>send your message!</button>
+     </form>
+</body>
+</html>
