@@ -24,5 +24,13 @@
 
 // to get the fruits info
 
-const info = require("./Fruits");
-console.log(info);
+// const info = require("./Fruits");
+// console.log(info);
+
+
+// to import files
+import { sum, PI } from "./math.js";
+import { generate } from "random-words";
+// console.log(sum(1, 2));
+
+console.log(generate());
