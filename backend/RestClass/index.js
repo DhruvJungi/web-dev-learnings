@@ -21,7 +21,7 @@ let posts = [
     {
         id : uuidv4(),
         username : "Yug Gohel",
-        content : "I like bikes"
+        content : "I like bikes and cars"
     },
     {  
         id : uuidv4(),
@@ -55,7 +55,9 @@ app.get("/posts/:id", (req, res) => {
 app.patch("/posts/:id", (req, res) => {
     let { id } = req.params;
     let newContent = req.body.content;
-    console.log(newContent);
+    let post = posts.find((p) => id === p.id);
+    post.content = newContent;
+    console.log(post);
     res.send("patch request working");
 })
 
