@@ -3,6 +3,7 @@ const mysql = require("mysql2");
 const express = require("express");
 const app = express();
 const path = require("path");
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
@@ -66,8 +67,8 @@ app.get("/", (req, res) => {
   try {
     connection.query(q, (err, result) => {
       if (err) throw err;
-      console.log(result[0] ["count(*)"]);
-      res.render("home.ejs");
+      let count = result[0] ["count(*)"];
+      res.render("home.ejs", { count });
       // console.log(result.length);
     });
   } catch (err) {
