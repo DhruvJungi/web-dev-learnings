@@ -128,7 +128,7 @@ app.patch("/user/:id", (req, res) =>  {
         res.send("WRONG password");
       } else{
         let q2 = `UPDATE user SET username='${newUsername}' WHERE id='${id}'`;
-        connection.query(q2, (err, result) => {
+        connection.query( q2, (err, result) => {
           if(err) throw err;
           res.redirect("/user");
         });
