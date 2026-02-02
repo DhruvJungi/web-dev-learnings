@@ -1,0 +1,51 @@
+collection-- group of documents -- table
+document -- individual record -- row
+
+mongosh
+# use to start mongo db in terminal
+
+help
+# it will give all the query
+
+show dbs
+# it will show all the database
+
+quit
+# use to quit mongo db shell
+
+db
+# it will show current db
+
+show collections
+# it will show collections in current db
+
+db.collection.insertOne()
+# it will insert only single value in db
+
+db.collection.insertMany()
+# it can insert multiple value
+
+db.student.find()
+# it is use to show collection or entrys , or to find the values
+
+db.student.findOne()
+# if we add condition it will the first value match with that condition
+
+ db.student.updateOne()
+#  it will update only one value on the bases of given condition
+
+ db.student.updateMany()
+# it can update many values in the bases of given condition
+
+db.student.replaceOne()
+# it will replace the whole value 
+
+ db.student.deleteOne()
+#  it can delete only one value 
+
+db.student.deleteMany()
+# it can delete multiple value
+
+db.dropDatabase()
+# it will delte the whole database
+
