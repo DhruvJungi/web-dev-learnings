@@ -54,14 +54,30 @@ const User = mongoose.model("User", userSchema);
 //         console.log(err);
 //     });
 
+
+
 // to update the value
 // update one
+
 // User.updateOne({name: "Bruce"}, {age: 49})
 // update many
-User.updateMany({age: {$gt: 48} }, {age: 55})
-    .then((res) => {
-        console.log(res);
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+// User.updateMany({age: {$gt: 48} }, {age: 55})
+//     .then((res) => {
+//         console.log(res);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
+
+
+// to delete the values
+// it will delete one value only
+// User.deleteOne({name: "Bruce"}).then((res) => {
+
+// to delete multiple values
+// User.deleteMany({ age: 48 }).then((res) => {
+
+// in these method we will delete the value by its id 
+User.findByIdAndDelete('6980b20a49c1a617de8df407').then((res) => {
+    console.log(res);
+});
