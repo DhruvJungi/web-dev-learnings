@@ -81,3 +81,6 @@ const User = mongoose.model("User", userSchema);
 User.findByIdAndDelete('6980b20a49c1a617de8df407').then((res) => {
     console.log(res);
 });
+
+// there i 1 more method findOneAndDelete
+
